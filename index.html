@@ -29,10 +29,8 @@
                     <h1>NuCamp</h1>
                     <h2>a better way to camp</h2>
                 </div>
-                <div class="col col-md-4 col-xl-2">
-                    <a href="#reserveForm">
-                        <button type="button" class="btn btn-info btn-lg mt-4">Reserve Campsite</button>
-                    </a>
+                <div class="col-md-4 col-xl-2 mt-4">
+                    <a href="#reserveForm"><button type="button" class="btn btn-info btn-lg">Reserve Campsite</button></a>
                 </div>
             </div>
         </div>
@@ -103,14 +101,15 @@
             </div>
         </div>
         <div class="row row-content">
-            <div class="col col-sm-6 mx-auto">
+            <div class="col-sm-6 mx-auto">
                 <div class="card">
                     <h3 class="card-header bg-info text-white">Reserve a Campsite</h3>
                     <div class="card-body">
                         <form id="reserveForm">
                             <div class="form-group row">
-                                <label for="numberOfCampers" class="col col-sm-6 col-form-label">Number of Campers</label>
-                                    <select name="numCampers" id="numCampers">
+                                <label for="numCampers" class="col-sm-6 col-form-label">Number of Campers</label>
+                                <div class="col">
+                                    <select class="col-sm form-control" name="numCampers" id="numCampers">
                                         <option value="select">Select...</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -119,20 +118,22 @@
                                         <option value="5">5</option>
                                         <option value="6">6</option>
                                     </select>
+                                </div>    
                             </div>
                             <div class="form-group row">
-                                <label for="date" class="col col-sm-6 col-form-label">Date</label>
-                                <input type="date" id="date" name="date" placeholder="date">
+                                <label for="date" class="col-sm-6 col-form-label">Date</label>
+                                <div class="col-sm-6">
+                                <input class="col form-control" type="date" id="date" name="date" placeholder="date">
+                                </div>
                             </div>
                             <div class="form-group row">
-                                <div class="col">
+                                <div class="col-sm-6">
                                     <button type="submit" class="btn btn-primary">Search</button>
                                 </div>                                    
                             </div>
                         </form>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
