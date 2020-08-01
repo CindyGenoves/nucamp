@@ -67,8 +67,7 @@
             </div>
         </div>
 
-        <div class="row row-content
-        align-items-center">
+        <div class="row row-content align-items-center">
             <div class="col-sm-4 col-md-3">
                 <h2>Featured Campsites</h2>
             </div>
@@ -84,8 +83,7 @@
             </div>
         </div>
 
-        <div class="row row-content
-        align-items-center">
+        <div class="row row-content align-items-center">
             <div class="col-sm-4 order-sm-last col-md-3">
                 <h2 class="text-sm-right">Our Community Partners</h2>
             </div>
@@ -97,6 +95,38 @@
                         <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with gear you need at prices you can't beat.</p>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="row row-content">
+            <div class="col col-sm-6 mx-auto">
+                <div class="card">
+                    <h3 class="card-header bg-info text-white">Reserve a Campsite</h3>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group row">
+                                <label for="numberOfCampers" class="col col-sm-6 col-form-label">Number of Campers</label>
+                                    <select name="numCampers" id="numCampers">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                    </select>
+                            </div>
+                            <div class="form-group row">
+                                <label for="date" class="col col-sm-6 col-form-label">Date</label>
+                                <input type="date" id="date" name="date" placeholder="date">
+                            </div>
+                            <div class="form-group row">
+                                <div class="col">
+                                    <button type="submit" class="btn btn-primary">Search</button>
+                                </div>                                    
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
